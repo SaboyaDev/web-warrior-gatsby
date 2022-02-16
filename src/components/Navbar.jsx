@@ -4,11 +4,13 @@ import { Link } from 'gatsby'
 const Navbar = () => {
   return (
     <nav>
-      <h1>Web Warrior</h1>
+      <Link className='logo' to='/'>
+        Web Warrior
+      </Link>
       <div className='links'>
         <Link to='/'>Home</Link>
         <Link to='/about'>About</Link>
-        <Link to='/projects'>Portfolio Projects</Link>
+        <Link to='/projects'>Portfolio</Link>
       </div>
     </nav>
   )

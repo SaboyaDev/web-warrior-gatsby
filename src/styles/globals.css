@@ -28,12 +28,17 @@ p {
 .layout {
   max-width: 1200px;
   margin: 0 auto;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 nav {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  margin: 40px auto;
+  margin: 2rem 0 auto;
+  align-items: center;
 }
+
 nav .links {
   display: inline-block;
   text-align: right;
@@ -46,9 +51,22 @@ nav a {
   border-bottom: 3px solid transparent;
 }
 nav a:hover {
-  border-color: white;
+  border-color: #d42990;
 }
+
+.logo {
+  margin-left: 0;
+  font-size: 1.7rem;
+  font-weight: 700;
+  border: none;
+}
+
+footer {
+  margin-top: auto;
+}
+
 footer p {
+  font-size: 1.3rem;
   text-align: center;
   color: #bbb;
   margin: 40px auto;
